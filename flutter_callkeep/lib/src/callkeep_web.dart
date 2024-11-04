@@ -1,6 +1,10 @@
 import 'dart:async';
 
-import 'package:flutter_callkeep_platform_interface/flutter_callkeep_platform_interface.dart';
+import 'package:flutter_callkeep/interface/flutter_callkeep_platform_interface.dart';
+import 'package:flutter_callkeep/interface/src/models/call_event.dart';
+import 'package:flutter_callkeep/interface/src/models/call_event_handler.dart';
+import 'package:flutter_callkeep/interface/src/models/callkeep_config.dart';
+import 'package:flutter_callkeep/interface/src/models/callkeep_event_type.dart';
 import 'package:flutter_web_plugins/flutter_web_plugins.dart';
 
 typedef CallKeepEventRecord = ({CallEvent event, CallKeepEventType type});

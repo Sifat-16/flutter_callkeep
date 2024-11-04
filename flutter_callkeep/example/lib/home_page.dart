@@ -4,9 +4,13 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_callkeep/flutter_callkeep.dart';
+import 'package:flutter_callkeep/interface/src/models/call_event.dart';
+import 'package:flutter_callkeep/interface/src/models/call_event_handler.dart';
 import 'package:flutter_callkeep_example/app_router.dart';
 import 'package:flutter_callkeep_example/navigation_service.dart';
 import 'package:uuid/uuid.dart';
+
+import 'main.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -38,6 +42,13 @@ class HomePageState extends State<HomePage> {
       appBar: AppBar(
         title: const Text('CallKeep example app'),
         actions: <Widget>[
+          IconButton(
+            icon: const Icon(
+              Icons.notification_add_outlined,
+              color: Colors.black54,
+            ),
+            onPressed: showCallIncoming,
+          ),
           IconButton(
             icon: const Icon(
               Icons.call,
@@ -212,5 +223,10 @@ class HomePageState extends State<HomePage> {
     setState(() {
       textEvents += "$type: ${event.toString()}\n";
     });
+  }
+
+  void showCallIncoming() {
+    // configureCallkeep();
+    displayIncomingCall(const Uuid().v4());
   }
 }

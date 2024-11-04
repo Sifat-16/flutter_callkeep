@@ -2,6 +2,7 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_callkeep/flutter_callkeep.dart';
+import 'package:flutter_callkeep/interface/src/models/call_event.dart';
 import 'package:flutter_callkeep_example/navigation_service.dart';
 import 'package:http/http.dart';
 

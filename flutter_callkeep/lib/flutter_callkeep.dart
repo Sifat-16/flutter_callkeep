@@ -1,9 +1,11 @@
 import 'dart:async';
 
 import 'package:flutter/widgets.dart';
-import 'package:flutter_callkeep_platform_interface/flutter_callkeep_platform_interface.dart';
 
-export 'package:flutter_callkeep_platform_interface/flutter_callkeep_platform_interface.dart';
+import 'interface/flutter_callkeep_platform_interface.dart';
+import 'interface/src/models/call_event.dart';
+import 'interface/src/models/call_event_handler.dart';
+import 'interface/src/models/callkeep_config.dart';
 
 /// Instance to use library functions.
 /// * displayIncomingCall(CallKeepIncomingConfig)

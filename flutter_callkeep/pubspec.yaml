@@ -1,6 +1,7 @@
 name: flutter_callkeep
 description: iOS CallKit and Android ConnectionService bindings for Flutter
 version: 1.0.0
+publish_to: none
 homepage: https://github.com/doneservices/flutter_callkeep
 
 # To avoid publishing errors
@@ -14,7 +15,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_callkeep_platform_interface: ^1.0.1
+
+
   flutter_web_plugins:
     sdk: flutter
 
